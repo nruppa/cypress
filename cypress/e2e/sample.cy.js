@@ -1,0 +1,17 @@
+describe('empty spec', () => {
+    it('passes', () => {
+      cy.visit('http://localhost:3001/')
+    //   cy.get('.gLFyf').type('fgfgfg')
+    cy.get('[href="/Form"]').type('{Enter}')
+    cy.get(':nth-child(1) > .MuiInputBase-root > .MuiInputBase-input').type('Niharika')
+    cy.get(':nth-child(2) > .MuiInputBase-root > .MuiInputBase-input').type('Ruppa{Enter}')
+    cy.get(':nth-child(3) > .MuiInputBase-root > .MuiInputBase-input').type('{Enter}')
+    cy.get(':nth-child(5) > .MuiInputBase-root > .MuiInputBase-input').type('{Enter}')
+    cy.get('.MuiButtonBase-root').type('{Enter}')
+    cy.get('[href="/About"]').type('{Enter}')
+    cy.get('#fname').type('{Enter}')
+    cy.get('[href="/A"]').type('{Enter}')
+    cy.get('[href="/effect"]').type('{Enter}')
+    cy.get('button').click()
+    })
+  })
